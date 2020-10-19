@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,7 +30,7 @@ public class UselessFragment extends Fragment {
         Context context = view.getContext();
         RecyclerView recyclerView = (RecyclerView) view;
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
-        recyclerView.setAdapter(new RecyclerAdapter(UnnecessaryContent.ITEMS, fragmentManager));
+        recyclerView.setAdapter(new RecyclerAdapter(UnnecessaryContent.ITEMS, fragmentManager, 0));
 
         return view;
     }
